@@ -8,7 +8,7 @@ import {
   useColorModeValue,
   Icon,
   useColorMode,
-  Image
+  Text
 } from '@chakra-ui/react';
 import { RiCloseFill, RiMenu2Line, RiMoonLine, RiSunLine } from 'react-icons/ri';
 import Link from 'next/link';
@@ -69,11 +69,19 @@ const Header = () => {
                 alignItems={'center'}
                 spacing={{ base: 2, sm: 4 }}
               >
-                {
+                {/* {
                   colorMode == 'light'
                     ? <Image src="/zapdart-logo-dark.svg" height="32px" />
                     : <Image src="/zapdart-logo-light.svg" height="32px" />
-                }
+                } */}
+                <Text
+                  fontFamily="heading"
+                  letterSpacing="tight"
+                  fontWeight="bold"
+                  fontSize="lg"
+                >
+                  blocademy
+                </Text>
               </Stack>
             </Link>
           </Flex>

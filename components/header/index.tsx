@@ -8,7 +8,8 @@ import {
   useColorModeValue,
   Icon,
   useColorMode,
-  Text
+  Text,
+  color
 } from '@chakra-ui/react';
 import { RiCloseFill, RiMenu2Line, RiMoonLine, RiSunLine } from 'react-icons/ri';
 import Link from 'next/link';

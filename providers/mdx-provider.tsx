@@ -9,7 +9,7 @@ import {
   ListItem
 } from '@chakra-ui/react'
 
-const components = {
+export const components = {
   h1: (props) => (
     <Heading as="h1" fontSize="5xl" mb={3}>
       {props.children}

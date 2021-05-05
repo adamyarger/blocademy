@@ -1,13 +1,22 @@
+import { serialize } from 'next-mdx-remote/serialize'
+import { MDXRemote } from 'next-mdx-remote'
+import InfoLayout from 'layouts/info-layout'
+import { components } from 'providers/mdx-provider'
 import { GetStaticPaths, GetStaticProps } from 'next'
 import { PostData, PostUtil } from 'utils/md_utils'
-import InfoLayout from 'layouts/info-layout'
 
-interface PostProps {
-  postData: PostData
+export default function TestPage({ source }) {
+  return (
+    <InfoLayout>
+      <MDXRemote {...source} components={components} />
+    </InfoLayout>
+  )
 }
 
-export default function Lesson({ postData }: PostProps) {
-  return <InfoLayout>{postData.mdString}</InfoLayout>
+export async function getStaticProps({ params }) {
+  const postData = PostUtil.getPostData(params.id as string)
+  const mdxSource = await serialize(postData.mdString)
+  return { props: { source: mdxSource } }
 }
 
 export const getStaticPaths: GetStaticPaths = async () => {
@@ -15,14 +24,5 @@ export const getStaticPaths: GetStaticPaths = async () => {
   return {
     paths,
     fallback: false,
-  }
-}
-
-export const getStaticProps: GetStaticProps<PostProps> = async ({ params }) => {
-  const postData = PostUtil.getPostData(params.id as string)
-  return {
-    props: {
-      postData,
-    },
   }
 }

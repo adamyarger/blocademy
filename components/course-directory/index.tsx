@@ -4,7 +4,7 @@ const CourseDirectory = () => {
   const foundationList = [
     {
       title: 'How This Course Will Work',
-      slug: '#'
+      slug: '/lessons/how-this-course-will-work'
     },
     {
       title: 'Introduction to Blockchain',

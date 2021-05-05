@@ -7,12 +7,11 @@ import {
   IconButton,
   useColorModeValue,
   Icon,
-  useColorMode,
-  Text,
-  color
+  useColorMode
 } from '@chakra-ui/react';
 import { RiCloseFill, RiMenu2Line, RiMoonLine, RiSunLine } from 'react-icons/ri';
 import Link from 'next/link';
+import Logo from 'components/logo'
 
 import { MobileNav } from './mobile-nav';
 import { DesktopNav } from './desktop-nav';
@@ -30,7 +29,7 @@ const Header = () => {
         w={'full'}
         minH={'60px'}
         borderBottom={'1px solid'}
-        borderBottomColor={useColorModeValue('gray.200', 'gray.900')}
+        borderBottomColor={useColorModeValue('gray.300', 'gray.900')}
         zIndex="999"
         justify={'center'}
         css={{
@@ -75,14 +74,7 @@ const Header = () => {
                     ? <Image src="/zapdart-logo-dark.svg" height="32px" />
                     : <Image src="/zapdart-logo-light.svg" height="32px" />
                 } */}
-                <Text
-                  fontFamily="heading"
-                  letterSpacing="tight"
-                  fontWeight="bold"
-                  fontSize="lg"
-                >
-                  blocademy
-                </Text>
+                <Logo />
               </Stack>
             </Link>
           </Flex>

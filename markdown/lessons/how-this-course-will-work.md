@@ -1,9 +1,7 @@
 ---
-title: 'Two Forms of Pre-rendering'
-date: '2020-01-01'
+title: 'How This Course Will Work'
+date: '2021-05-05'
 ---
-
-# Intro to Algorithms
 
 
 ### What are algorithms?

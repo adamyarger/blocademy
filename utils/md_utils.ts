@@ -29,9 +29,7 @@ export class PostUtil {
   static getPostData(id: string): PostData {
     const fullPath = path.join(postsDirectory, `${id}.md`)
     const fileContents = fs.readFileSync(fullPath, 'utf8')
-
-    const matterResult = matter(fileContents)
-    const { content, data } = matterResult
+    const { content, data } = matter(fileContents)
 
     return {
       id,

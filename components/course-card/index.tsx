@@ -25,6 +25,7 @@ const CourseCard = ({ heading, description, list }: Props) => {
       width="100%"
       overflow="hidden"
       p="8"
+      borderColor="gray.300"
     >
       <Heading as="h2" size="lg" mb="7">{heading}</Heading>
       <Text opacity={0.7} mb="7" fontSize="lg">{description}</Text>

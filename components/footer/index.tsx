@@ -22,7 +22,14 @@ const Footer = () => {
       <Stack>
         <Stack direction="row" spacing="4" align="center" justify="space-between">
           <Link href={'/'} passHref>
-            <Logo />
+            <Stack
+              as={'a'}
+              direction={'row'}
+              alignItems={'center'}
+              spacing={{ base: 2, sm: 4 }}
+            >
+              <Logo />
+            </Stack>
           </Link>
 
           <ButtonGroup variant="ghost" color="gray.600">

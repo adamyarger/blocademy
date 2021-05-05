@@ -14,6 +14,8 @@ const mdComponents = {
   // a: (props) => <Link as="a" {...props} />,
 }
 
-export default ({ children }) => (
-  <MDXProvider components={mdComponents}>{children}</MDXProvider>
-)
+export default function Provider({ children }) {
+  return (
+    <MDXProvider components={mdComponents}>{children}</MDXProvider>
+  )
+}

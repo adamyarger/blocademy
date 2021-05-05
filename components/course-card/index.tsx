@@ -2,7 +2,9 @@ import React from 'react'
 import {
   Box,
   Heading,
-  List,
+  OrderedList,
+  ListItem,
+  Link,
   Text
 } from '@chakra-ui/react'
 
@@ -15,7 +17,7 @@ interface Props {
   }[]
 }
 
-const CourseCard = ({ heading, description }: Props) => {
+const CourseCard = ({ heading, description, list }: Props) => {
   return (
     <Box
       borderWidth="1px"
@@ -24,10 +26,21 @@ const CourseCard = ({ heading, description }: Props) => {
       overflow="hidden"
       p="6"
     >
-      <Heading as="h2" size="lg" mb="4">{heading}</Heading>
-      <Text opacity={0.7}>{description}</Text>
+      <Heading as="h2" size="lg" mb="7">{heading}</Heading>
+      <Text opacity={0.7} mb="7" fontSize="lg">{description}</Text>
 
-
+      <OrderedList spacing="3">
+        {list.map((item, index) => (
+          <ListItem
+            key={index}
+            fontSize="xl"
+            fontWeight="500"
+            color="blue.700"
+          >
+            <Link href={item.slug}>{item.title}</Link>
+          </ListItem>
+        ))}
+      </OrderedList>
     </Box>
   )
 }

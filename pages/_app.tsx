@@ -4,6 +4,7 @@ import {
   ChakraProvider,
   extendTheme
 } from '@chakra-ui/react';
+import MDXProvider from 'providers/mdx-provider'
 
 // const blue = {
 //   "50": "#e3f2ff",
@@ -33,10 +34,12 @@ const theme = extendTheme({
 function App({ Component, pageProps }: AppProps) {
   return (
     <ChakraProvider theme={theme}>
-      <Head>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Poppins:ital,wght@0,500;1,500&amp;display=swap" rel="stylesheet"></link>
-      </Head>
-      <Component {...pageProps} />
+      <MDXProvider>
+        <Head>
+          <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Poppins:ital,wght@0,500;1,500&amp;display=swap" rel="stylesheet"></link>
+        </Head>
+        <Component {...pageProps} />
+      </MDXProvider>
     </ChakraProvider>
   );
 }

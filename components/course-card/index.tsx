@@ -36,7 +36,7 @@ const CourseCard = ({ heading, description, list }: Props) => {
             key={index}
             fontSize="xl"
             fontWeight="500"
-            color="blue.700"
+            color="blue.500"
           >
             <Link href={item.slug}>{item.title}</Link>
           </ListItem>

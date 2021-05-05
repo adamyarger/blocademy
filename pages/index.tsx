@@ -33,6 +33,8 @@ export default function Home() {
                 fontWeight="extrabold"
                 mb="16px"
                 lineHeight="1.2"
+                bgGradient="linear(to-r, teal.400, purple.400)"
+                bgClip="text"
               >
                 Your Career In Blockchain Starts Here
               </chakra.h1>

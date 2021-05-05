@@ -1,5 +1,9 @@
-# Intro to Algorithms
+---
+title: 'Two Forms of Pre-rendering'
+date: '2020-01-01'
+---
 
+# Intro to Algorithms
 
 
 ### What are algorithms?

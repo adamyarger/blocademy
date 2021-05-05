@@ -12,7 +12,7 @@ export interface PostData extends PostMetadata {
   mdString: string
 }
 
-const postsDirectory = path.join(process.cwd(), 'post/md')
+const postsDirectory = path.join(process.cwd(), 'markdown/lessons')
 
 export class PostUtil {
   static getAllPostIds(): { params: { id: string } }[] {

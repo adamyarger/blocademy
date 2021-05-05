@@ -3,19 +3,50 @@ import { MDXProvider } from '@mdx-js/react'
 import {
   Heading,
   Text,
+  Link,
+  UnorderedList,
+  OrderedList,
+  ListItem
 } from '@chakra-ui/react'
 
-const mdComponents = {
-  h1: (props) => <Heading as="h1" {...props} />,
-  h2: (props) => <Heading as="h2" {...props} />,
-  h3: (props) => <Heading as="h3" {...props} />,
-  h4: (props) => <Heading as="h4" {...props} />,
-  p: (props) => <Text as="p" {...props} />,
-  // a: (props) => <Link as="a" {...props} />,
-}
+const components = {
+  h1: (props) => (
+    <Heading as="h1" fontSize="5xl" mb={3}>
+      {props.children}
+    </Heading>
+  ),
+  h2: (props) => (
+    <Heading as="h2" fontSize="4xl" my={3}>
+      {props.children}
+    </Heading>
+  ),
+  h3: (props) => (
+    <Heading as="h3" fontSize="3xl" my={3}>
+      {props.children}
+    </Heading>
+  ),
+  h4: (props) => (
+    <Heading as="h4" fontSize="2xl" my={3}>
+      {props.children}
+    </Heading>
+  ),
+  h5: (props) => (
+    <Heading as="h5" fontSize="xl" my={3}>
+      {props.children}
+    </Heading>
+  ),
+  h6: (props) => (
+    <Heading as="h6" fontSize="lg" my={3}>
+      {props.children}
+    </Heading>
+  ),
+  ul: (props) => <UnorderedList my={2}>{props.children}</UnorderedList>,
+  li: (props) => <ListItem>{props.children}</ListItem>,
+  p: (props) => <Text my={2} fontSize="lg">{props.children}</Text>,
+};
 
 export default function Provider({ children }) {
   return (
-    <MDXProvider components={mdComponents}>{children}</MDXProvider>
+    <MDXProvider components={components}>{children}</MDXProvider>
   )
 }

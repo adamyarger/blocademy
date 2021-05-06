@@ -7,8 +7,8 @@ const CourseDirectory = () => {
       slug: '/lessons/how-this-course-will-work'
     },
     {
-      title: 'Introduction to Blockchain',
-      slug: '#'
+      title: 'Introduction to Cryptocurrency',
+      slug: '/lessons/introduction-to-cryptocurrency'
     }
   ];
 

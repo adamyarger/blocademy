@@ -26,8 +26,8 @@ export const DesktopNav = (props: BoxProps) => {
               <Link
                 p={2}
                 href={navItem.href ?? '#'}
-                fontSize={'sm'}
-                fontWeight={500}
+                fontSize={'md'}
+                fontWeight={600}
                 color={useColorModeValue('gray.600', 'gray.200')}
                 _hover={{
                   textDecoration: 'none',

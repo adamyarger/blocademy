@@ -6,7 +6,7 @@ const Logo = () => {
       fontFamily="heading"
       letterSpacing="tight"
       fontWeight="bold"
-      fontSize="lg"
+      fontSize="xl"
       color="brand.500"
     >
       blocademy

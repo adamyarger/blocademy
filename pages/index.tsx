@@ -22,12 +22,11 @@ export default function Home() {
           as="section"
           pt={{ base: "10rem", md: "12rem" }}
           pb={{ base: "0", md: "5rem" }}
-          mb={20}
         >
           <Container>
             <Box textAlign="center">
-              <Box>
-                <BlockchainIcon />
+              <Box mb="6">
+                <BlockchainIcon blockSize="125px" fill="blue.500" />
               </Box>
               <chakra.h1
                 maxW="18ch"

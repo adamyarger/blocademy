@@ -15,8 +15,6 @@ export default function TestPage({ source, data }) {
     }
   }
 
-  console.log(data)
-
   return (
     <InfoLayout>
       <Box textAlign="center">

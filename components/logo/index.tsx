@@ -7,6 +7,7 @@ const Logo = () => {
       letterSpacing="tight"
       fontWeight="bold"
       fontSize="lg"
+      color="brand.500"
     >
       blocademy
     </Text>

@@ -8,6 +8,7 @@ import {
 import Container from 'components/container'
 import CourseDirectory from 'components/course-directory'
 import DefaultLayout from 'layouts/default-layout'
+import BlockchainIcon from 'components/icons/blockchain-icon'
 
 export default function Home() {
   return (
@@ -25,6 +26,9 @@ export default function Home() {
         >
           <Container>
             <Box textAlign="center">
+              <Box>
+                <BlockchainIcon />
+              </Box>
               <chakra.h1
                 maxW="18ch"
                 mx="auto"
@@ -33,8 +37,6 @@ export default function Home() {
                 fontWeight="extrabold"
                 mb="16px"
                 lineHeight="1.2"
-                bgGradient="linear(to-r, teal.400, purple.400)"
-                bgClip="text"
               >
                 Your Career In Blockchain Starts Here
               </chakra.h1>

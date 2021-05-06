@@ -6,29 +6,29 @@ import {
 } from '@chakra-ui/react';
 import MDXProvider from 'providers/mdx-provider'
 
-// const blue = {
-//   "50": "#e3f2ff",
-//   "100": "#bcdfff",
-//   "200": "#90ccff",
-//   "300": "#60b7ff",
-//   "400": "#3ba7ff",
-//   "500": "#1897ff",
-//   "600": "#2188ff",
-//   "700": "#2476eb",
-//   "800": "#2664d8",
-//   "900": "#2643b9"
-// };
+const blue = {
+  "50": "#E7EDFD",
+  "100": "#BCCDFB",
+  "200": "#91ADF8",
+  "300": "#668DF5",
+  "400": "#3B6DF2",
+  "500": "#0F4DF0",
+  "600": "#0C3EC0",
+  "700": "#092E90",
+  "800": "#061F60",
+  "900": "#030F30"
+};
 
 const theme = extendTheme({
   fonts: {
     heading: "'Poppins', sans-serif",
     body: "'Inter', sans-serif"
   },
-  // colors: {
-  //   heroBg: "#040d21",
-  //   brand: blue,
-  //   blue: blue
-  // }
+  colors: {
+    heroBg: "#040d21",
+    brand: blue,
+    blue: blue
+  }
 });
 
 function App({ Component, pageProps }: AppProps) {

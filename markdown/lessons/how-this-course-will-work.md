@@ -1,6 +1,7 @@
 ---
 title: 'How This Course Will Work'
 date: '2021-05-05'
+course: 'FOUNDATIONS'
 ---
 
 ## Welcome to Blocademy
@@ -11,7 +12,7 @@ Blocademy is an open source compilation of resources dedicated to providing the 
 
 ## Introduction
 
-In this unit, we'll learn about what lead to the creation of blockchain and crypto currencies, that means a history lesson. 
+In this unit, we'll learn about what lead to the creation of blockchain and crypto currencies, that means a history lesson.
 
 In order to understand how cryptocurrencies work, we have to start from first principles, and take a field trip back in time to the multitude of technologies that converged to crate the first cryptocurrency, Bitcoin.
 
@@ -33,7 +34,7 @@ We believe people learn best by doing, we try to include exercises or projects f
 
 ## What Comes Next
 
-Once you've completed the foundation course, you should be pretty comfortable with the building blocks of blockchain and cryptocurrency. This is just the beginning, it's now time to start playing with real world blockchains, ethereum in particular. 
+Once you've completed the foundation course, you should be pretty comfortable with the building blocks of blockchain and cryptocurrency. This is just the beginning, it's now time to start playing with real world blockchains, ethereum in particular.
 
 - Ethereum has by far the most resources and developers
 - This curriculum is a work in progress, but know everything included is there for a reason. Remember we're building a skyscraper of knowledge and thats done one level at a time.

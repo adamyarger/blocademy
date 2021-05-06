@@ -5,7 +5,8 @@ import matter from 'gray-matter'
 export interface PostMetadata {
   id: string
   title: string
-  date: string
+  date: string,
+  course: string
 }
 
 export interface PostData extends PostMetadata {
@@ -35,6 +36,7 @@ export class PostUtil {
       id,
       title: data.title,
       date: data.date,
+      course: data.course,
       mdString: content,
     }
   }

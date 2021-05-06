@@ -4,12 +4,28 @@ import InfoLayout from 'layouts/info-layout'
 import { components } from 'providers/mdx-provider'
 import { GetStaticPaths, GetStaticProps } from 'next'
 import { PostData, PostUtil } from 'utils/md_utils'
-import { Heading } from '@chakra-ui/react'
+import { Heading, Icon, Box } from '@chakra-ui/react'
+import { RiBuilding4Line } from 'react-icons/ri'
 
 export default function TestPage({ source, data }) {
+  const courses = {
+    FOUNDATIONS: {
+      title: 'Foundations',
+      icon: RiBuilding4Line
+    }
+  }
+
+  console.log(data)
+
   return (
     <InfoLayout>
-      <Heading as="h1" fontSize="5xl" mb="10">{data.title}</Heading>
+      <Box textAlign="center">
+        <Icon as={courses[data.course].icon} boxSize="12" />
+        <Heading as="h1" fontSize="3xl" mb="4" mt="4" fontWeight="300">
+          {courses[data.course].title}
+        </Heading>
+        <Heading as="h2" fontSize="3xl" mb="14" color="blue.500">{data.title}</Heading>
+      </Box>
       <MDXRemote {...source} components={components} />
     </InfoLayout>
   )

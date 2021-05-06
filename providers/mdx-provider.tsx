@@ -16,7 +16,7 @@ export const components = {
     </Heading>
   ),
   h2: (props) => (
-    <Heading as="h2" fontSize="4xl" my={3}>
+    <Heading as="h2" fontSize="4xl" mb="1.71rem" mt="2.565rem">
       {props.children}
     </Heading>
   ),
@@ -40,9 +40,9 @@ export const components = {
       {props.children}
     </Heading>
   ),
-  ul: (props) => <UnorderedList my={2}>{props.children}</UnorderedList>,
-  li: (props) => <ListItem>{props.children}</ListItem>,
-  p: (props) => <Text my={2} fontSize="lg">{props.children}</Text>,
+  ul: (props) => <UnorderedList my={2} spacing="4">{props.children}</UnorderedList>,
+  li: (props) => <ListItem fontSize="lg">{props.children}</ListItem>,
+  p: (props) => <Text my={2} fontSize="lg" lineHeight="1.6" mb="7" mt="0">{props.children}</Text>,
 };
 
 export default function Provider({ children }) {
